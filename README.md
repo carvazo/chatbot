@@ -1,27 +1,74 @@
-## Use Azure app service editor
+---
+layout: post
+title:  "Customer CaaP Hackfest"
+author: "Eunji Kim"
+author-link: "#"
+#author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
+date:   2017-11-24
+categories: CaaP
+color: "blue"
+#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+excerpt: This article is aimed a providing a template to create DevOps Hackfest articles.
+---
 
-1. make code change in the online editor
+## Learning from Hackfest with *Carvazo* ##
 
-Your code changes go live as the code changes are saved.
+Intro statement with bulleted lists of:
 
-## Use Visual Studio Code
+- AI based customer facing chat bot solution implemented 
+- Core Hack Team: Eunji Kim (Microsoft Software Engineer), Minsoo Bae (Microsoft Program Manager), 
+ 
+## Customer Profile ##
+Carvazo, a startup in Korea providing mechanic hiring platform for second hand car buyer
 
-### Build and debug
-1. download source code zip and extract source in local folder
-2. open the source folder in  Visual Studio Code
-3. make code changes
-4. download and run [botframework-emulator](https://emulator.botframework.com/)
-5. connect the emulator to http://localhost:3987
+	Installations: Slack, Azure App Service editor(preview), Azure Bot Service, QnAMaker.ai 
 
-### Publish back
+	Participants: Jintae Jung (CTO), TaeRyang Yoo (CEO)
 
-```
-npm run azure-publish
-```
+	Countries: Korea
 
-## Use continuous integration
+	Product/service offerings: Mechanic hiring platform for second hand car buyer at Web and Apps(iOS and Androids in 2018)
 
-If you have setup continuous integration, then your bot will automatically deployed when new changes are pushed to the source repository.
+Focus of the Hackfest
+	Developing Web chat dialogues to provide service information and utilizing exisiting FAQ resource
+ 
+## Problem Statement ##
 
 
+As business is growing in terms of transactions and visitors, the current business operation proportionaly increases, requiring significant labor hours. Most of user inquiry is simple, therefore the answering task is repetitive and monotonous. Despite of prepared FaQ information, users prefer to make call or to have short chat to human directly. Saving internal resource and capturing the leads from users, the both are crucial objectives for Carvazo's sustainable growth. 
 
+TaeRyang Yoo - the CEO of Carvazo - realized its current customer service has certain limitation and should be developed for further business growth. An automated chat can be solution, but its developing team spends all of time to develop Carvazo's first mobile app for iOS and Androids, which resulted in lack of exploring the newest technologies, such as AI and Bot Framework. 
+ 
+## Solutions, Steps, and Delivery ##
+
+
+Value Stream Mapping description and how it helped in the exercise
+
+
+DevOps practice area improved (source code snippets, pictures, drawings)
+
+	Define what was worked on and what problem it helped solve
+
+	Technical details of how this was implemented
+	
+	Pointers to references or documentation 
+	
+	Learnings from the Microsoft team and the customer team
+ 
+## Conclusion ##
+
+Time or cost savings metrics resulting from the implementation of the solution
+
+*To be updated*
+
+Changes in the company culture or their organization
+
+*to be updated*
+
+## General lessons ##
+Bulleted list of insights the Hackfest team came away with
+
+What can be applied or reused in other environments or other customers ?
+
+## Resources ##
+Links to additional resource (documentation, blog posts, github repos, ...)
