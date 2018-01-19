@@ -1,74 +1,60 @@
----
-layout: post
-title:  "Customer CaaP Hackfest"
-author: "Eunji Kim"
-author-link: "#"
-#author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-11-24
-categories: CaaP
-color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: This article is aimed a providing a template to create DevOps Hackfest articles.
----
+## Key Technologies ##
 
-## Learning from Hackfest with *Carvazo* ##
+* [Azure Bot Service](https://azure.microsoft.com/ko-kr/services/bot-service/)
+* [QnA Maker](https://qnamaker.ai/)
 
-Intro statement with bulleted lists of:
+## Core Project Team ##
 
-- AI based customer facing chat bot solution implemented 
-- Core Hack Team: Eunji Kim (Microsoft Software Engineer), Minsoo Bae (Microsoft Program Manager), 
+* Microsoft
+	* Minsoo Bae (Program Manager, Microsoft)
+	* [Eunji Kim](https://github.com/angie4u) (Software Engineer, Microsoft)
+
+* Carvazo
+	* Tae Ryang Yoo (CEO)
+	* Jin Tae Jung (CTO)
  
 ## Customer Profile ##
-Carvazo, a startup in Korea providing mechanic hiring platform for second hand car buyer
+![carvazo](./images/carvazo.jpg)
+![carvazodaily](./images/carvazodaily.jpg)
 
-	Installations: Slack, Azure App Service editor(preview), Azure Bot Service, QnAMaker.ai 
+[Carvazo](https://www.carvazo.com/), a startup in Korea providing mechanic hiring platform for second hand car buyer
 
-	Participants: Jintae Jung (CTO), TaeRyang Yoo (CEO)
-
-	Countries: Korea
-
-	Product/service offerings: Mechanic hiring platform for second hand car buyer at Web and Apps(iOS and Androids in 2018)
-
-Focus of the Hackfest
-	Developing Web chat dialogues to provide service information and utilizing exisiting FAQ resource
- 
 ## Problem Statement ##
-
 
 As business is growing in terms of transactions and visitors, the current business operation proportionaly increases, requiring significant labor hours. Most of user inquiry is simple, therefore the answering task is repetitive and monotonous. Despite of prepared FaQ information, users prefer to make call or to have short chat to human directly. Saving internal resource and capturing the leads from users, the both are crucial objectives for Carvazo's sustainable growth. 
 
 TaeRyang Yoo - the CEO of Carvazo - realized its current customer service has certain limitation and should be developed for further business growth. An automated chat can be solution, but its developing team spends all of time to develop Carvazo's first mobile app for iOS and Androids, which resulted in lack of exploring the newest technologies, such as AI and Bot Framework. 
- 
+
+![001](./images/001.jpg)
+
 ## Solutions, Steps, and Delivery ##
 
+### Dialog
+![architecture001](./images/architecture001.PNG)
 
-Value Stream Mapping description and how it helped in the exercise
+This services is consists of three dialogs: earlyCarSearch, reservation, askFAQ
 
+* earlyCarSearch : Users can inquire a list of available vehicles.
+* reservation : Users can make a car inspection service reservation to a desired place for desired time.
+* askFAQ : It responds to users' questions based on FAQ data.
 
-DevOps practice area improved (source code snippets, pictures, drawings)
+### Architecture
+![architecture002](./images/architecture002.PNG)
 
-	Define what was worked on and what problem it helped solve
-
-	Technical details of how this was implemented
-	
-	Pointers to references or documentation 
-	
-	Learnings from the Microsoft team and the customer team
- 
-## Conclusion ##
-
-Time or cost savings metrics resulting from the implementation of the solution
-
-*To be updated*
-
-Changes in the company culture or their organization
-
-*to be updated*
+### Application Screenshot
+![screen001](./images/screen001.PNG)
 
 ## General lessons ##
-Bulleted list of insights the Hackfest team came away with
+* The Bot Builder SDK was well designed, so customer training time was short, and customer learning curve was short. In this case, half-day training alone has taught customers how to use Dialog, and most Dialogs were written by customers.
 
-What can be applied or reused in other environments or other customers ?
+* Because the Bot Builder SDK supports Nodes, it was convenient to work with existing customer systems, and it was convenient to use several Node packages.
+
+## Conclusion ##
+* In small start-ups, there is always a demand for chatbots because of the lack of human resources. It will be easy to find similar scenarios.
+
+* There are many Startups that have no experience on Azure in Korea. Hackfest is a good starting point to experience Azure naturally, so it will increase possibility to adopt Azure when they choosing a cloud infrastructure.
 
 ## Resources ##
-Links to additional resource (documentation, blog posts, github repos, ...)
+* [Azure Bot Service - Documentation](https://docs.microsoft.com/ko-kr/bot-framework/bot-service-overview-introduction)
+* [QnA Maker - Documentation](https://qnamaker.ai/Documentation)
+
