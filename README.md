@@ -14,8 +14,7 @@
 	* Jin Tae Jung (CTO)
  
 ## Customer Profile ##
-![carvazo](./images/carvazo.jpg)
-![carvazodaily](./images/carvazodaily.jpg)
+![carvazo-introduce](./images/carvazo-introduce.PNG)
 
 [Carvazo](https://www.carvazo.com/), a startup in Korea providing mechanic hiring platform for second hand car buyer
 
