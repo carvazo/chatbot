@@ -196,9 +196,11 @@ var fQnAMaker = function (session, iQuestion) {
 * Because the Bot Builder SDK supports Nodes, it was convenient to work with existing customer systems, and it was convenient to use several Node packages.
 
 ## Conclusion ##
-* In small start-ups, there is always a demand for chatbots because of the lack of human resources. It will be easy to find similar scenarios.
+The goal of this project was to make it easier for customers to use Carvazo services. We wanted to build a Bot to respond to a large number of customers. Using [Microsoft Bot Service](https://azure.microsoft.com/en-us/services/bot-service/) to creat a bot, we could experience the following benefits:
 
-* There are many Startups that have no experience on Azure in Korea. Hackfest is a good starting point to experience Azure naturally, so it will increase possibility to adopt Azure when they choosing a cloud infrastructure.
+* Make a bot and manage conversation was easy using [Bot Framework](Just by updating the question list, I was able to create qna bots.).
+* [QnA maker](http://qnamaker.ai/) service made it very easy to configure bots to answer frequently asked questions. Just by updating the question list, we were able to create qna bot.
+* It was a good chance to use Microsoft cloud service - [Azure](https://azure.microsoft.com/) and get used to it.
 
 ## Resources ##
 * [Azure Bot Service - Documentation](https://docs.microsoft.com/ko-kr/bot-framework/bot-service-overview-introduction)
